@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Películas</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <main>
+        <section id="sectionForm">
+            <h2>Formulario</h2>
+
+            <form id="formMovies">
+                <label for="title">Título:</label>
+                <input type="text" id="title" name="title">
+
+                <label for="director">Director:</label>
+                <input type="text" id="director" name="director">
+
+                <label for="year">Año:</label>
+                <input type="number" id="year" name="year">
+
+                <label for="genre">Género:</label>
+                <select id="genre" name="genre" placeholder="Selecciona género" >
+                    <option disabled selected>Selecciona género...</option>
+                </select>
+
+                <input type="submit" value="Enviar Consulta">
+            </form>
+        </section>
+
+        <hr>
+
+        <section id="sectionTable">
+            <h2>Mostrar</h2>
+
+            <label for="filter">Filtrar:</label>
+            <select id="filter" name="filter" required>
+                <option selected>Mostrar todas las películas</option>
+            </select>
+
+            <table id="tableShow">
+                <tr>
+                    <th>Título</th>
+                    <th>Director</th>
+                    <th>Año</th>
+                    <th>Género</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </table>
+
+        </section>
+    </main>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
